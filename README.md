@@ -114,6 +114,12 @@ Author : Srinivasa Duggempudi.
   ```
   ![ScreenShot](images/runimage.PNG)
   
+  **Step 9 :** check Container
+  
+  Docker container ls
+  
+  ![ScreenShot](images/container.PNG)
+  
  **[⬆ Back to Top](#table-of-contents)** 
 
 3. ### What is TypeScript?
