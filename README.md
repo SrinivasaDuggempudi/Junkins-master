@@ -81,6 +81,16 @@ Author : Srinivasa Duggempudi.
   
   ![ScreenShot](images/dockerfile.PNG)
   
+  **Step 6 :**  Build a new docker image from this Dockerfile and assign the image a meaningful name, e.g. "myjenkins-blueocean:2.387.3-1":
+  
+  ``` 
+    docker build -t myjenkins-blueocean:2.387.3-1 .
+    
+  ``` 
+  Keep in mind that the process described above will automatically download the official Jenkins Docker image if this hasn’t been done before.
+  
+  ![ScreenShot](images/dockerimage.PNG)
+  
   
   **[⬆ Back to Top](#table-of-contents)**
 
