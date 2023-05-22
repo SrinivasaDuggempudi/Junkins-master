@@ -39,7 +39,7 @@ Author : Srinivasa Duggempudi.
     
     ![ScreenShot](images/cmd.PNG)
     
-    **Step 3:**  Create a bridge network in Docker
+   **Step 3:**  Create a bridge network in Docker
     
      Run the command  :  **docker network create Jenkins**   (Make sure Docker is up and running in the System before running this command)
               
@@ -58,7 +58,28 @@ Author : Srinivasa Duggempudi.
   docker:dind 
   
   ```
+  
   ![ScreenShot](images/dind.PNG)
+  
+   **Step 5 :**  Edit or create the docker file inside the junkins project with the following code
+   
+   ```
+      FROM jenkins/jenkins:2.387.3
+     USER root
+    RUN apt-get update && apt-get install -y lsb-release
+     RUN curl -fsSLo /usr/share/keyrings/docker-archive-keyring.asc \
+    https://download.docker.com/linux/debian/gpg
+    RUN echo "deb [arch=$(dpkg --print-architecture) \
+    signed-by=/usr/share/keyrings/docker-archive-keyring.asc] \
+     https://download.docker.com/linux/debian \
+    $(lsb_release -cs) stable" > /etc/apt/sources.list.d/docker.list
+    RUN apt-get update && apt-get install -y docker-ce-cli
+    USER jenkins
+    RUN jenkins-plugin-cli --plugins "blueocean docker-workflow" 
+
+   ``` 
+  
+  ![ScreenShot](images/dockerfile.PNG)
   
   
   **[⬆ Back to Top](#table-of-contents)**
