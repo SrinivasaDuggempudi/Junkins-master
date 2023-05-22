@@ -91,6 +91,15 @@ Author : Srinivasa Duggempudi.
   
   ![ScreenShot](images/dockerimage.PNG)
   
+  **Step 7:** Check the docker images
+  
+  ```
+      docker images
+  ```
+  
+  ![ScreenShot](images/dockerimageslist.PNG)
+  
+  
   
   **[⬆ Back to Top](#table-of-contents)**
 
