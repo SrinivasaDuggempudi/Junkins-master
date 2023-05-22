@@ -46,6 +46,21 @@ Author : Srinivasa Duggempudi.
       ![ScreenShot](images/bridge.PNG)
                         
   **Step 4:** In order to execute the docker commands in junkins nodes  download and run the **docker : dind** 
+  
+  Docker  image using the following docker run command 
+  ```
+  docker run --name jenkins-docker --rm --detach ^
+  --privileged --network jenkins --network-alias docker ^
+  --env DOCKER_TLS_CERTDIR=/certs ^
+  --volume jenkins-docker-certs:/certs/client ^
+  --volume jenkins-data:/var/jenkins_home ^
+  --publish 2376:2376 ^
+  docker:dind 
+  
+  ```
+  ![ScreenShot](images/dind.PNG)
+  
+  
   **[⬆ Back to Top](#table-of-contents)**
 
 3. ### What is TypeScript?
