@@ -32,9 +32,12 @@ Author : Srinivasa Duggempudi.
    **URL : **  https://www.jenkins.io/doc/book/installing/docker/#on-windows
    
     **STEPS TO INSTALL  JUNKINS**
+    
     **STEP :1**  open the CMD.
+    
     **STEP :2**  Open the Junkins folder 
-    ![ScreenShot](images/cmd.png)
+    
+    ![ScreenShot](images/cmd.PNG)
     
 
   **[⬆ Back to Top](#table-of-contents)**
