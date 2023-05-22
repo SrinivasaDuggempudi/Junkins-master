@@ -112,10 +112,10 @@ Author : Srinivasa Duggempudi.
         --publish 8081:8080 --publish 50000:50000 myjenkins-blueocean:2.387.3-1
    ```
    
-  ![ScreenShot](images/runimage.PNG)
+    ![ScreenShot](images/runimage.PNG)
   
   
-  **[⬆ Back to Top](#table-of-contents)**
+ **[⬆ Back to Top](#table-of-contents)**
 
 3. ### What is TypeScript?
     TypeScript is a strongly typed superset of JavaScript created by Microsoft that adds optional types, classes, async/await and many other features, and compiles to plain JavaScript. Angular is written entirely in TypeScript as a primary language.
