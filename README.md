@@ -102,6 +102,7 @@ Author : Srinivasa Duggempudi.
   **Step 8 :** Run the image.
   
   **Note  :**  Before running the image change the port from 8080 to 8081 because we run the another service in 8080.
+  
     ```
          docker run --name jenkins-blueocean --restart=on-failure --detach ^
          --network jenkins --env DOCKER_HOST=tcp://docker:2376 ^
@@ -110,7 +111,9 @@ Author : Srinivasa Duggempudi.
          --volume jenkins-docker-certs:/certs/client:ro ^
         --publish 8081:8080 --publish 50000:50000 myjenkins-blueocean:2.387.3-1
    ```
+   
   ![ScreenShot](images/runimage.PNG)
+  
   
   **[⬆ Back to Top](#table-of-contents)**
 
