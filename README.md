@@ -38,8 +38,13 @@ Author : Srinivasa Duggempudi.
     **STEP :2**  Open the Junkins folder 
     
     ![ScreenShot](images/cmd.PNG)
+    **Step 3:**  Create a bridge network in Docker
     
-
+              Run the command  :  **docker network create Jenkins**   (Make sure Docker is up and running in the System before running this command)
+              
+              ![ScreenShot](images/bridge.PNG)
+                        
+  **Step 4:** In order to execute the docker commands in junkins nodes  download and run the **docker : dind** 
   **[⬆ Back to Top](#table-of-contents)**
 
 3. ### What is TypeScript?
